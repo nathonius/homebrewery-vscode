@@ -31,7 +31,13 @@
             "./previewSpecific.css",
             "./phb.standalone.css"
         ],
-        "markdown.markdownItPlugins": true
+        "markdown.markdownItPlugins": true,
+        "snippets": [
+            {
+                "language": "markdown",
+                "path": "./snippets/phb.json"
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install"
