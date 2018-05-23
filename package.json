@@ -1,9 +1,23 @@
 {
     "name": "homebrewery-vscode",
-    "displayName": "homebrewery-vscode",
-    "description": "",
+    "displayName": "Homebrewery Markdown Preview",
+    "description": "Renders markdown in the preview pane like the Homebrewery",
     "version": "0.0.1",
     "publisher": "officerhalf",
+    "keywords": [
+        "markdown",
+        "dnd",
+        "homebrew",
+        "homebrewery",
+        "naturalcrit"
+    ],
+    "license": "MIT",
+    "repository": {
+        "url": "https://github.com/OfficerHalf/homebrewery-vscode.git"
+    },
+    "bugs": {
+        "url": "https://github.com/OfficerHalf/homebrewery-vscode/issues"
+    },
     "engines": {
         "vscode": "^1.23.0"
     },
