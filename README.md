@@ -7,6 +7,7 @@ Styles the markdown preview pane like the [Homebrewery](http://homebrewery.natur
 - Use `\page` to create new pages.
 
 ## Known Issues
+- Most divs (class tables, spell lists, descriptive text blocks, etc.) require a newline between the div's opening tag and the content of the div.
 - Class tables are broken
 - Images from external URLs will not be shown. This is due to security restrictions on Code's markdown preview.
 - The preview will sometimes scroll to the wrong place. This is a problem with Code.
