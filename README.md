@@ -1,5 +1,7 @@
 Styles the markdown preview pane like the [Homebrewery](http://homebrewery.naturalcrit.com/), so that you can create 5th Edition D&D homebrew in a more powerful application.
 
+![preview-image](https://raw.githubusercontent.com/OfficerHalf/homebrewery-vscode/master/docs/images/Preview.PNG)
+
 ## Features
 - Most markdown and formatting from the Homebrewery is supported.
 - Use `\page` to create new pages.
