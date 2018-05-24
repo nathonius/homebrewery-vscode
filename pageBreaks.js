@@ -1,4 +1,7 @@
 function replacePages(state) {
+    if(state.tokens.length === 0) {
+        return;
+    }
     if(state.tokens[0].type !== 'pageBr_open') {
         const open = new state.Token('pageBr_open', 'div', 1);
         open.attrPush(['class', 'phb']);
