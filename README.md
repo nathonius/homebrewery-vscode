@@ -22,8 +22,8 @@ Styles the markdown preview pane like the [Homebrewery](http://homebrewery.natur
 ---
 ## Release Notes
 ### 0.0.2
-Added most snippets
-Fixed empty file error
+- Added most snippets
+- Fixed empty file error
 
 ### 0.0.1
-Initial Release
+- Initial Release
