@@ -36,6 +36,10 @@
             {
                 "language": "markdown",
                 "path": "./snippets/phb.json"
+            },
+            {
+                "language": "markdown",
+                "path": "./snippets/tables.json"
             }
         ]
     },
