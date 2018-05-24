@@ -12,7 +12,7 @@ Styles the markdown preview pane like the [Homebrewery](http://homebrewery.natur
 - Class tables are broken
 - Background images are broken.
 - Wide block is offset incorrectly.
-- Images from external URLs may not be shown. This is due to security restrictions on Code's markdown preview. For best results, ensure that all image urls use `https://`
+- Images from external URLs may not be shown. This is due to security restrictions on Code's markdown preview. For best results, ensure that all image urls use `https://`. Though it is not recommended, you can also [disable security](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview-security).
 - The preview will sometimes scroll to the wrong place. This is a problem with Code.
 
 ## To-Do List
