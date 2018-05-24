@@ -1,0 +1,85 @@
+{
+    "columnBreak": {
+        "scope": "markdown",
+        "prefix": "brewColumnBreak",
+        "description": "Begin a new column",
+        "body": [
+            "```",
+            "```",
+            ""
+        ]
+    },
+    "newPage": {
+        "scope": "markdown",
+        "prefix": "brewNewPage",
+        "description": "Begin a new page",
+        "body": "\\page"
+    },
+    "verticalSpacing": {
+        "scope": "markdown",
+        "prefix": "brewVerticalSpacing",
+        "description": "Add a margin between two elements",
+        "body": [
+            "<div style='margin-top:140px'></div>",
+            "",
+            ""
+        ]
+    },
+    "wideBlock": {
+        "scope": "markdown",
+        "prefix": "brewWideBlock",
+        "description": "Span the page",
+        "body": [
+            "<div class='wide'>",
+            "",
+            "Everything in here will be extra wide. Tables, text, everything! Beware though, CSS columns can behave a bit weird sometimes.",
+            "</div>",
+            ""
+        ]
+    },
+    "image": {
+        "scope": "markdown",
+        "prefix": "brewImage",
+        "description": "Add an image. May not render in Code.",
+        "body": [
+            "<img ",
+            "  src='https://s-media-cache-ak0.pinimg.com/736x/4a/81/79/4a8179462cfdf39054a418efd4cb743e.jpg' ",
+            "  style='width:325px' />",
+            "Credit: Kyounghwan Kim"
+        ]
+    },
+    "backgroundImage": {
+        "scope": "markdown",
+        "prefix": "brewBackgroundImage",
+        "description": "Add a background image. May not render in Code.",
+        "body": [
+            "<img ",
+            "  src='http://i.imgur.com/hMna6G0.png' ",
+            "  style='position:absolute; top:50px; right:30px; width:280px' />"
+        ]
+    },
+    "pageNumber": {
+        "scope": "markdown",
+        "prefix": "brewPageNumber",
+        "description": "Add a page number to the bottom of the page.",
+        "body": [
+            "<div class='pageNumber'>1</div>",
+            "<div class='footnote'>PART 1 | FANCINESS</div>",
+            "",
+            ""
+        ]
+    },
+    "tableOfContents": {
+        "scope": "markdown",
+        "prefix": "brewTOC",
+        "description": "A table of contents",
+        "body": [
+            "<div class='toc'>",
+            "",
+            "##### Table Of Contents",
+            "",
+            "</div>",
+            ""
+        ]
+    }
+}

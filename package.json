@@ -40,6 +40,10 @@
             {
                 "language": "markdown",
                 "path": "./snippets/tables.json"
+            },
+            {
+                "language": "markdown",
+                "path": "./snippets/editor.json"
             }
         ]
     },
