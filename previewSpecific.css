@@ -1,5 +1,5 @@
 div.phb p, div.phb h5, div.phb h6, div.phb li, div.phb strong,
-div.classTable tr, div.classTable td, div.classTable h5 {
+div.phb th, div.phb td, div.classTable h5 {
     color: black;
 }
 
