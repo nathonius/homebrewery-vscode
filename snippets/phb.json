@@ -24,7 +24,6 @@
         "description": "A spell list",
         "body": [
             "<div class='spellList'>",
-            "",
             "##### Cantrips (0 Level) ",
             "- Heal Bad Hygene",
             "- Sorcerous Dandruff Globe",
@@ -184,7 +183,6 @@
         "description": "Use descriptions to set a scene.",
         "body": [
             "<div class='descriptive'>",
-            "",
             "##### Time to Drop Knowledge",
             "Use notes to point out some interesting information. ",
             "",
@@ -276,12 +274,10 @@
             "</style>",
             "",
             "<div style='margin-top:450px;'></div>",
-            "",
             "# Yellow Divinity",
             "",
             "<div style='margin-top:25px'></div>",
             "<div class='wide'>",
-            "",
             "##### In a land of corruption, two cyberneticists and a dungeon delver search for freedom.",
             "</div>",
             "",

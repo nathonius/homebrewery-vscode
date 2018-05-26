@@ -21,7 +21,6 @@
         "description": "Add a margin between two elements",
         "body": [
             "<div style='margin-top:140px'></div>",
-            "",
             ""
         ]
     },
@@ -31,7 +30,6 @@
         "description": "Span the page",
         "body": [
             "<div class='wide'>",
-            "",
             "Everything in here will be extra wide. Tables, text, everything! Beware though, CSS columns can behave a bit weird sometimes.",
             "</div>",
             ""
@@ -65,7 +63,6 @@
         "body": [
             "<div class='pageNumber'>1</div>",
             "<div class='footnote'>PART 1 | FANCINESS</div>",
-            "",
             ""
         ]
     },
@@ -75,7 +72,6 @@
         "description": "A table of contents",
         "body": [
             "<div class='toc'>",
-            "",
             "##### Table Of Contents",
             "",
             "</div>",
