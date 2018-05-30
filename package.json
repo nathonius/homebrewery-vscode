@@ -24,7 +24,9 @@
     "categories": [
         "Other"
     ],
-    "activationEvents": [],
+    "activationEvents": [
+        "onCommand:homebrewery.toggle"
+    ],
     "main": "./extension.js",
     "contributes": {
         "configuration": {
