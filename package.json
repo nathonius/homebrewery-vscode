@@ -27,6 +27,24 @@
     "activationEvents": [],
     "main": "./extension.js",
     "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "Homebrewery configuration",
+            "properties": {
+                "homebrewery.enabled": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Use homebrewery formatting in markdown preview pane"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "homebrewery.toggle",
+                "title": "Toggle Homebrewery Preview",
+                "category": "Homebrewery"
+            }
+        ],
         "markdown.previewStyles": [
             "./previewSpecific.css",
             "./phb.standalone.css"
