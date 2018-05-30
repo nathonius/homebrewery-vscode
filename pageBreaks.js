@@ -1,5 +1,11 @@
+const vscode = require('vscode');
+
 function replacePages(state) {
     if(state.tokens.length === 0) {
+        return;
+    }
+    const enabled = vscode.workspace.getConfiguration('homebrewery').get('enabled');
+    if(!enabled) {
         return;
     }
     if(state.tokens[0].type !== 'pageBr_open') {

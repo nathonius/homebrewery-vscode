@@ -7,6 +7,14 @@ Styles the markdown preview pane like the [Homebrewery](http://homebrewery.natur
 - Use `\page` to create new pages.
 - Most of the same snippets The Homebrewery provides are available with the 'brew' prefix. Ex: `brewStatBlock`
 
+## Commands
+#### `homebrewery.toggle`
+toggles the `homebrewery.enabled` setting
+
+## Settings
+#### `homebrewery.enabled`
+use homebrewery formatting in the markdown preview pane. `true` by default.
+
 ## Known Issues
 - Any div element used requires a new line between the div and its content
 - Class tables are broken
@@ -16,11 +24,13 @@ Styles the markdown preview pane like the [Homebrewery](http://homebrewery.natur
 - The preview will sometimes scroll to the wrong place. This is a problem with Code.
 
 ## To-Do List
-- Add command to enable/disable styling, even if it requires restarting Code.
 - Add command to export as html. For now, just copy and paste into the homebrewery.
 - Add remaining snippets
 ---
 ## Release Notes
+### 0.0.3
+- Added toggle command to enable/disable homebrewery formatting
+
 ### 0.0.2
 - Added most snippets
 - Fixed empty file error
