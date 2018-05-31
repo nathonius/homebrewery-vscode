@@ -1,0 +1,29 @@
+{
+    "a4Size": {
+        "scope": "markdown",
+        "prefix": "brewA4PageSize",
+        "description": "Apply A4 page size",
+        "body" : [
+            "<style>",
+            "  .phb{",
+            "    width : 210mm;",
+            "    height : 296.8mm;",
+            "  }",
+            "</style>",
+            ""
+        ]
+    },
+    "inkFriendly": {
+        "scope": "markdown",
+        "prefix": "brewInkFriendly",
+        "description": "White backgrounds and hidden images.",
+        "body": [
+            "<style>",
+            "  .phb{ background : white;}",
+            "  .phb img{ display : none;}",
+            "  .phb hr+blockquote{background : white;}",
+            "</style>",
+            ""
+        ]
+    }
+}

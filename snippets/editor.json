@@ -69,6 +69,21 @@
             ""
         ]
     },
+    "autoPageNumber": {
+        "scope": "markdown",
+        "prefix": "brewAutoPageNumber",
+        "description": "Add a page number to the bottom of the page.",
+        "body": [
+            "<div class='pageNumber auto'></div>",
+            ""
+        ]
+    },
+    "pageLink": {
+        "scope": "markdown",
+        "prefix": "brewPageLink",
+        "description": "A link to a specific page number",
+        "body": "[Click here](#p3) to go to page 3"
+    },
     "tableOfContents": {
         "scope": "markdown",
         "prefix": "brewTOC",

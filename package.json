@@ -64,6 +64,10 @@
             {
                 "language": "markdown",
                 "path": "./snippets/editor.json"
+            },
+            {
+                "language": "markdown",
+                "path": "./snippets/print.json"
             }
         ]
     },
