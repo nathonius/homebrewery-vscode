@@ -33,7 +33,6 @@ This prevents the preview jumping around and stops the formatting breaking when 
 
 ## To-Do List
 - Add command to export as html. For now, just copy and paste into the homebrewery.
-- Add remaining snippets
 ---
 ## Release Notes
 ### 0.0.4
