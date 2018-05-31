@@ -1,7 +1,14 @@
 # Change Log
-All notable changes to the "homebrewery-vscode" extension will be documented in this file.
+## 0.0.4
+- Added remaining snippets
+- Both manual and auto page numbering work.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 0.0.3
+- Added toggle command to enable/disable homebrewery formatting
 
-## [Unreleased]
-- Initial release
+## 0.0.2
+- Added most snippets
+- Fixed empty file error
+
+## 0.0.1
+- Initial Release

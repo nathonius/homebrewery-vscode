@@ -47,5 +47,4 @@ This prevents the preview jumping around and stops the formatting breaking when 
 - Added most snippets
 - Fixed empty file error
 
-### 0.0.1
-- Initial Release
+See [Changelog](CHANGELOG.md) for more.
