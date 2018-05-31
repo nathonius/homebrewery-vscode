@@ -1,11 +1,14 @@
 const vscode = require('vscode');
 
-function replacePages(state) {
+function homebreweryEnabled() {
+    return vscode.workspace.getConfiguration('homebrewery').get('enabled');
+}
+
+function addWrapper(state) {
     if(state.tokens.length === 0) {
         return;
     }
-    const enabled = vscode.workspace.getConfiguration('homebrewery').get('enabled');
-    if(!enabled) {
+    if(!homebreweryEnabled()) {
         return;
     }
     if(state.tokens[0].type !== 'pageBr_open') {
@@ -15,6 +18,22 @@ function replacePages(state) {
         open.attrPush(['style', 'margin-bottom: 30px;']);
         state.tokens.splice(0, 0, open);
     }
+    if(state.tokens[state.tokens.length - 1].type !== 'pageBr_close') {
+        const close = new state.Token('pageBr_close', 'div', -1);
+        state.tokens.push(close);
+    }
+}
+
+function replacePages(state) {
+    if(state.tokens.length === 0) {
+        return;
+    }
+    if(!homebreweryEnabled()) {
+        return;
+    }
+
+    let currentPage = 2;
+
     for (let i = state.tokens.length - 1; i >= 0; i--) {
         if (state.tokens[i].type !== 'inline') { continue; }
         if(state.tokens[i].content === '\\page') {
@@ -24,7 +43,8 @@ function replacePages(state) {
                 token = inlineTokens[j];
                 if(token.type === 'text') {
                     if(token.content === '\\page') {
-                        replaceToken(state, i);
+                        replaceToken(state, i, currentPage);
+                        currentPage++;
                         break;
                     }
                 }
@@ -33,11 +53,12 @@ function replacePages(state) {
     }
 }
 
-function replaceToken(state, tokenPos) {
+function replaceToken(state, tokenPos, currentPage) {
     const close = new state.Token('pageBr_close', 'div', -1);    
     const open = new state.Token('pageBr_open', 'div', 1);
     open.attrPush(['class', 'phb']);
     open.attrPush(['style', 'margin-bottom: 30px;']);
+    open.attrPush(['id', `p${currentPage}`])
 
     state.tokens[tokenPos-1] = close;
     state.tokens[tokenPos+1] = open;
@@ -45,5 +66,6 @@ function replaceToken(state, tokenPos) {
 }
 
 module.exports = function replacePages_plugin(md, scheme) {
-    md.core.ruler.before('replacements', 'replacePages', replacePages);
+    md.core.ruler.before('replacements', 'homebrewery_wrapper', addWrapper);
+    md.core.ruler.after('homebrewery_wrapper', 'homebrewery_pages', replacePages);
 };
