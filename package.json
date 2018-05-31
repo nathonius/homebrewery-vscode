@@ -2,7 +2,7 @@
     "name": "homebrewery-vscode",
     "displayName": "Homebrewery Markdown Preview",
     "description": "Renders markdown in the preview pane like the Homebrewery",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "officerhalf",
     "keywords": [
         "markdown",
