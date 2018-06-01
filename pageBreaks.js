@@ -5,10 +5,7 @@ function homebreweryEnabled() {
 }
 
 function addWrapper(state) {
-    if(state.tokens.length === 0) {
-        return;
-    }
-    if(!homebreweryEnabled()) {
+    if(state.tokens.length === 0 || !homebreweryEnabled()) {
         return;
     }
     if(state.tokens[0].type !== 'pageBr_open') {
@@ -25,10 +22,7 @@ function addWrapper(state) {
 }
 
 function replacePages(state) {
-    if(state.tokens.length === 0) {
-        return;
-    }
-    if(!homebreweryEnabled()) {
+    if(state.tokens.length === 0 || !homebreweryEnabled()) {
         return;
     }
 
