@@ -11,6 +11,9 @@ Styles the markdown preview pane like the [Homebrewery](http://homebrewery.natur
 #### `homebrewery.toggle`
 toggles the `homebrewery.enabled` setting
 
+### `homebrewery.brew`
+print to HTML
+
 ## Settings
 #### `homebrewery.enabled`
 use homebrewery formatting in the markdown preview pane. `true` by default.
@@ -25,14 +28,17 @@ This prevents the preview jumping around and stops the formatting breaking when 
 
 ## Known Issues
 - Any div element used requires a new line between the div and its content
+- The HTML rendered by the `homebrewery.brew` command is sometimes _slightly_ different than the preview.
 - Images from external URLs may not be shown. This is due to security restrictions on Code's markdown preview. For best results, ensure that all image urls use `https://`. Though it is not recommended, you can also [disable security](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview-security).
 - The preview will sometimes scroll to the wrong place. See [Usage](#usage) above.
 
 ## To-Do List
-- Add command to export as html. For now, just copy and paste into the homebrewery.
 - Allow for alternate styles and color palettes
 ---
 ## Release Notes
+### 0.1.0
+- Added brew command to print to HTML
+
 ### 0.0.4
 - Added remaining snippets
 - Both manual and auto page numbering work.
