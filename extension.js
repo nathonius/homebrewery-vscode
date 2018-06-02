@@ -5,6 +5,8 @@ const ncp = require('ncp').ncp;
 const fs = require('fs');
 const Markdown = require('markdown-it');
 
+let ogMD;
+
 function brew() {
     const editor = vscode.window.activeTextEditor;
     const doc = editor.document;
@@ -32,15 +34,17 @@ function brew() {
         outPath += '.html';
     }
 
-    const md = new Markdown().use(pageBreaks);
-    const body = md.render(doc.getText());
+    // const md = new Markdown({html: true}).use(pageBreaks);
+    const body = ogMD.render(doc.getText());
     const html = `<!DOCTYPE html>
     <html>
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-        <link rel="stylesheet" href="phb.standalone.css">
+        <link rel="stylesheet" href="markdown.css">
+        <link rel="stylesheet" href="previewSpecific.css">
+        <link rel="stylesheet" href="phb.standaloneReduced.css">
     </head>
-    <body>
+    <body class="vscode-body">
         ${body}
     </body>
     </html>`;
@@ -73,6 +77,7 @@ function activate(context) {
 
     return {
         extendMarkdownIt(md) {
+            ogMD = md;
             return md.use(pageBreaks);
         }
     };

@@ -54,8 +54,8 @@
             }
         ],
         "markdown.previewStyles": [
-            "./previewSpecific.css",
-            "./phb.standaloneReduced.css"
+            "./homebrewery-assets/previewSpecific.css",
+            "./homebrewery-assets/phb.standaloneReduced.css"
         ],
         "markdown.markdownItPlugins": true,
         "snippets": [
