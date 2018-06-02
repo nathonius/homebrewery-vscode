@@ -3,7 +3,6 @@ const pageBreaks = require('./pageBreaks');
 const path = require('path');
 const ncp = require('ncp').ncp;
 const fs = require('fs');
-const Markdown = require('markdown-it');
 
 let ogMD;
 
