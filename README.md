@@ -46,8 +46,4 @@ This prevents the preview jumping around and stops the formatting breaking when 
 ### 0.0.3
 - Added toggle command to enable/disable homebrewery formatting
 
-### 0.0.2
-- Added most snippets
-- Fixed empty file error
-
 See [Changelog](CHANGELOG.md) for more.
