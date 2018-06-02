@@ -25,7 +25,8 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:homebrewery.toggle"
+        "onCommand:homebrewery.toggle",
+        "onCommand:homebrewery.brew"
     ],
     "main": "./extension.js",
     "contributes": {
@@ -45,11 +46,16 @@
                 "command": "homebrewery.toggle",
                 "title": "Toggle Homebrewery Preview",
                 "category": "Homebrewery"
+            },
+            {
+                "command": "homebrewery.brew",
+                "title": "Print to HTML",
+                "category": "Homebrewery"
             }
         ],
         "markdown.previewStyles": [
-            "./previewSpecific.css",
-            "./phb.standaloneReduced.css"
+            "./homebrewery-assets/previewSpecific.css",
+            "./homebrewery-assets/phb.standaloneReduced.css"
         ],
         "markdown.markdownItPlugins": true,
         "snippets": [
@@ -76,5 +82,8 @@
     },
     "devDependencies": {
         "vscode": "^1.1.6"
+    },
+    "dependencies": {
+        "ncp": "^2.0.0"
     }
 }
