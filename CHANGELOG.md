@@ -1,4 +1,7 @@
 # Change Log
+## 0.1.0
+- Added brew command to print to HTML
+
 ## 0.0.4
 - Added remaining snippets
 - Both manual and auto page numbering work.
